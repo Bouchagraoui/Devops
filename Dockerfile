@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 COPY target/student-management-0.0.1-SNAPSHOT.jar app.jar
 
 # Étape 3 : Exposer le port de ton application
-EXPOSE 8088
+EXPOSE 8080
 
 # Étape 4 : Commande de lancement
 ENTRYPOINT ["java","-jar","/app.jar"]
